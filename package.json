@@ -1,0 +1,27 @@
+{
+  "name": "faas-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start:dev": "tsc -w & nodemon ./dist/index.js",
+    "start": "tsc & node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "huidi.zhu",
+  "license": "ISC",
+  "dependencies": {
+    "@infra-node-kit/logger": "^1.0.0",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "wait-on": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.16",
+    "@types/wait-on": "^5.3.1",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.5"
+  }
+}
